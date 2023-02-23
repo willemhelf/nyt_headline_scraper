@@ -1,13 +1,13 @@
-var headers = document.getElementsByTagName("h4") // collect all instances of headlines
-var headerCount = 0 //set a ticker
+var headers = document.getElementsByTagName("h4") 
+var headerCount = 0 
 
 function scrapeHeaders(term) {
-    for (var i = 0; i < headers.length; i++) { // go through every headline
-        if(headers[i].innerHTML.indexOf(term) > 0) { // check if the desired word is used
-            headerCount++ // add 1 to ticker
+    for (var i = 0; i < headers.length; i++) { 
+        if(headers[i].innerHTML.indexOf(term) > 0) { 
+            headerCount++ 
         }
     }
-    return headerCount // give us final ticker count
+    return headerCount 
 }
 
-scrapeHeaders("Transgender") // run the code with desired word 
+scrapeHeaders("")  
